@@ -1,3 +1,5 @@
+
+
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
@@ -43,23 +45,25 @@ public class ControlFlowExercises {
 //                System.out.println(i);
 //            }
 //        }
+
+
         //========== Refactor to For Loop ==========//
-        for (long i = 2; i < 1000000; i *= i) {
-            System.out.println(i);
-        }
+//        for (long i = 2; i < 1000000; i *= i) {
+//            System.out.println(i);
+//        }
 
 
         //========== QUESTION 3 ==========//
-//        System.out.println("What number do you want to go up to?");
-//        System.out.println("number | squared | cubed");
-//        System.out.println("------------------------");
-//        int i = 1;
-//        int j = i++;
-////        double s = Math.pow(i, 2);
-////        double c = Math.pow(i, 3);
-//        while(i < 10) {
-//            System.out.println("|" + j + "|" + Math.pow(i, 2) + "|" + Math.pow(i, 3) + "|");
-//        }
+        System.out.println("What number do you want to go up to?");
+        System.out.println("number | squared | cubed");
+        System.out.println("------------------------");
+        int i = 1;
+        int j = i++;
+//        double s = Math.pow(i, 2);
+//        double c = Math.pow(i, 3);
+        while(i < 10) {
+            System.out.println("|" + j + "|" + Math.pow(i, 2) + "|" + Math.pow(i, 3) + "|");
+        }
 
     }
 }
