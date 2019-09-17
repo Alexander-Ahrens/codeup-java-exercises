@@ -1,8 +1,10 @@
-
+import java.lang.Math;
+import java.util.*;
 
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
+        Scanner scan = new Scanner(System.in);
 
 //        //========== QUESTION 1a ==========//
 //        int i = 5;
@@ -54,16 +56,32 @@ public class ControlFlowExercises {
 
 
         //========== QUESTION 3 ==========//
-        System.out.println("What number do you want to go up to?");
-        System.out.println("number | squared | cubed");
-        System.out.println("------------------------");
-        int i = 1;
-        int j = i++;
-//        double s = Math.pow(i, 2);
-//        double c = Math.pow(i, 3);
-        while(i < 10) {
-            System.out.println("|" + j + "|" + Math.pow(i, 2) + "|" + Math.pow(i, 3) + "|");
-        }
+//        int i;
+//        int square;
+//        int cube;
+//
+//        System.out.println("What number do you want to go up to?");
+//        System.out.println("| number | squared | cubed |");
+//        System.out.println("----------------------------");
+//        for(i = 1; i <= 10; i++) {
+//            square = i * i;
+//            cube = i * square;
+//            System.out.println(i + "\t" + square + "\t" + cube);
+//        }
 
+//        System.out.println("What is your grade in the class?");
+//        int grade = scan.nextInt();
+//        if (grade >= 88 && grade <= 100) {
+//            System.out.println("A");
+//        } else if (grade >= 80 && grade <= 87) {
+//            System.out.println("B");
+//        } else if (grade >= 67 && grade <= 79) {
+//            System.out.println("C");
+//        } else if (grade >= 60 && grade <= 66) {
+//            System.out.println("D");
+//        } else {
+//            System.out.println("F");
+//        }
     }
 }
+
