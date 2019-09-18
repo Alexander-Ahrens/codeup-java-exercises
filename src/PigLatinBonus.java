@@ -18,11 +18,8 @@ public class PigLatinBonus {
 //        String word = "";
         System.out.println("Type a word to convert it to pig latin.");
         String input = scan.nextLine();
-        String word = input.trim()
-                            .toLowerCase()
-                            .substring(1)
-                            .concat(input.substring(0, 1).toLowerCase())
-                            .concat("ay");
+        String word = input.toLowerCase().substring(1)
+                .concat(input.substring(0, 1).toLowerCase()).concat("ay");
         System.out.println(word);
 
     }
