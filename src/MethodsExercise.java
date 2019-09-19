@@ -1,6 +1,7 @@
 import java.math.*;
 import java.util.*;
 import java.lang.Integer;
+import java.lang.String;
 
 public class MethodsExercise {
 
@@ -12,6 +13,8 @@ public class MethodsExercise {
 //        System.out.println(modulo(8, 2));
         count(5);
         System.out.println(recursiveProduct(3, 22));
+//        System.out.println(oneToTen());
+//        getInteger(1, 10);
 
     }
 
@@ -65,17 +68,42 @@ public class MethodsExercise {
 
     //============================================================  EXERCISE 2 ============================================================//
     // Prompt the user to enter an integer from 1 to 10.
-    public static int oneToTen(int thing) {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Enter any number between 1 and 10.");
-        Integer input = scan.nextInt();
-        if (input >= 1 && input <= 10) {
-            System.out.println("Hey person! That ain't no number between one and ten! Try again lil' buddy!");
-        } else {
-            System.out.println();
-        }
-        return thing;
-    }
+
+    // With recursion
+//        public static int getInteger(int min, int max) {
+//            Scanner scan = new Scanner(System.in);
+//            if (scan.hasNextInt()) {
+//    //            System.out.println("Valid input!");
+//    //            Integer input = scan.nextInt();
+//                int userNum = scan.nextInt();
+//                if (userNum >= min && userNum >= max) {
+//                    return userNum;
+//                } else {
+//                    System.out.println("Invalid Range");
+//                    return getInteger(min, max);
+//                }
+//            } else {
+//                System.out.println("Invalid input");
+//                return getInteger(min, max);
+//                }
+//            return 0;
+//        }
+
+//    public static int oneToTen() {
+//        Scanner scan = new Scanner(System.in);
+//        System.out.println("Enter any number between 1 and 10.");
+//        Integer input = scan.nextInt();
+//        if (input >= 1 && input <= 10) {
+//            return input;
+////            System.out.println(input);
+//        } else {
+////            System.out.println("Hey person! That ain't no number between one and ten! Try again lil' buddy!");
+//            return input;
+//        }
+//    }
+
+
+
 
     // Display the factorial of the number entered by the user.
     // Ask if the user wants to continue.
@@ -90,5 +118,8 @@ public class MethodsExercise {
 
 
     //============================================================  EXERCISE 4 ============================================================//
+
+
+
 
 }
