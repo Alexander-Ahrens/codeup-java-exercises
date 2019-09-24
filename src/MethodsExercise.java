@@ -18,7 +18,7 @@ public class MethodsExercise {
 
     }
 
-    //============================================================ EXERCISE ONE ============================================================//
+    //============================================================ EXERCISE 1 ============================================================//
     //========== ADDS TWO NUMBERS ==========//
     public static int add(int num1, int num2) {
         return num1 + num2;
@@ -115,11 +115,39 @@ public class MethodsExercise {
     // Factorials are denoted by the exclamation point (n!).
 
     //============================================================  EXERCISE 3 ============================================================//
-
+//    public static long factorial() {
+//        int number = getInteger(1, 10);
+//        long Factorial = 1;
+//        String middleString = "";
+//        for (int i = 1; i <= number; i++) {
+//            Factorial *= i;
+//            if (middleString.isEmpty()) {
+//                middleString += i;
+//            } else {
+//                middleString += " X " + i;
+//            }
+//            System.out.println(i + "! = " + middleString + " = " + Factorial);
+////        }
+////        return 0;
+////
+//    }
 
     //============================================================  EXERCISE 4 ============================================================//
 
+    public int diceRoll(int num, int numberOfSides) {
+        Scanner scan = new Scanner(System.in);
+        num = 0;
+        System.out.println("How many sides do you want your dice to have?");
 
+        numberOfSides = scan.nextInt();
+
+        int dieOne = (int)(Math.random()*6) + 1;
+        int dieTwo = (int)(Math.random()*6) + 1;
+        int totalDiceNum = dieOne + dieTwo;
+
+        System.out.println(totalDiceNum);
+        return totalDiceNum;
+    }
 
 
 }

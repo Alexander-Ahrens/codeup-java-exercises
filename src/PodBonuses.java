@@ -1,9 +1,11 @@
+import org.w3c.dom.ls.LSOutput;
+import java.lang.Math;
 import java.util.*;
 
 public class PodBonuses {
 
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+//    public static void main(String[] args) {
+//        Scanner scan = new Scanner(System.in);
 
         //random easy stuff that I made up:
 //        String buffalo = "Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo ";
@@ -13,6 +15,10 @@ public class PodBonuses {
 //        System.out.print(buffalo);
 //        System.out.println(connectingSentence);
 //        System.out.println(bison);
+//        System.out.println(sleepIn(true, false));
+//        System.out.println(diff21(121));
+//        System.out.println(firstHalf("rogerroger"));
+//        System.out.println(withoutEnd("tajmahal"));
 
 //================================= JAVA STRING BONUSES
 //
@@ -69,7 +75,7 @@ public class PodBonuses {
 //            System.out.println("Consonants: " + consonantCount);
 
 
-//                ----BONUS 3
+//-----------------------------  BONUS 3 -----------------------------//
 //
 //        Create a command line calculator application.
 //
@@ -101,35 +107,35 @@ public class PodBonuses {
 //
 //        GOODBYE!!!
 
-        int num1 = 0;
-        int num2 = 0;
-        char operator;
-        int total = 0;
+//        int num1 = 0;
+//        int num2 = 0;
+//        char operator;
+//        int total = 0;
 
-        System.out.println("CALCULATOR");
+//        System.out.println("CALCULATOR");
 //        System.out.println("Do you want to add, subtract, multiply or divide?");
-        System.out.println("Enter first number.");
-        num1 = scan.nextInt();
-        System.out.println("Enter second number.");
-        num2 = scan.nextInt();
-        System.out.println("Do you want to add, subtract, multiply, or divide? use +, -, *, or /.");
-        operator = scan.next().charAt(0);
-
-        switch (operator) {
-            case '+':
-                total = num1 + num2;
-                break;
-            case '-':
-                total = num1 - num2;
-                break;
-            case '*':
-                total = num1 * num2;
-                break;
-            case '/':
-                total = num1 / num2;
-                break;
-        }
-        System.out.println(total);
+//        System.out.println("Enter first number.");
+//        num1 = scan.nextInt();
+//        System.out.println("Enter second number.");
+//        num2 = scan.nextInt();
+//        System.out.println("Do you want to add, subtract, multiply, or divide? use +, -, *, or /.");
+//        operator = scan.next().charAt(0);
+//
+//        switch (operator) {
+//            case '+':
+//                total = num1 + num2;
+//                break;
+//            case '-':
+//                total = num1 - num2;
+//                break;
+//            case '*':
+//                total = num1 * num2;
+//                break;
+//            case '/':
+//                total = num1 / num2;
+//                break;
+//        }
+//        System.out.println(total);
 //        String add = "add";
 //        String subtract = "subtract";
 //        String multiply = "multiply";
@@ -139,6 +145,15 @@ public class PodBonuses {
 //            int input2 = scan.nextInt();
 //            int input3 = scan.nextInt();
 //            System.out.println(input2 + input3);
+
+
+
+        //----------------------------- Bonus 5 -----------------------------//
+
+
+
+
+
 
 //        STRING BONUS CHALLENGE
 //        Create a command line Hangman game!
@@ -156,10 +171,56 @@ public class PodBonuses {
 //
 
 
-    }
 
+
+
+
+//    }
+//================================= From https://codingbat.com/java =================================//
+
+//    public static int diff21(int n) {
+//        if (n <= 21) {
+//            return 21 - n;
+//        } else {
+//            return (n - 21) * 2;
+//        }
+//    }
+
+// Given a string of even length, return the first half. So the string "WooHoo" yields "Woo".
+//    public static String firstHalf(String str) {
+//        return str.substring(0, str.length() / 2);
+//    }
+//
+//    public static String withoutEnd(String str) {
+//        char firstLetter = str.charAt(0);
+//        char lastLetter = str.charAt(str.length() - 1);
+//        return str;
+//    }
 
 //}
+
+
+    public static void fizzBuzzLoop(int i, int j) {
+        if (i <= j) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println("FizzBuzz");
+            } else if (i % 3 == 0) {
+                System.out.println("Fizz");
+            } else if (i % 5 == 0) {
+                System.out.println("Buzz");
+            } else {
+                System.out.println(i);
+            }
+            fizzBuzzLoop(++i, j);
+            } else {
+            System.exit(0);
+            }
+        }
+
+    public static void main(String[] args) {
+        fizzBuzzLoop(1, 100);
+
+    }
 
 
 }
