@@ -7,21 +7,21 @@ public class MoviesApplication {
 
     public static void main(String[] args) {
         Input scan = new Input();
-        boolean keepGoing;
-        System.err.println("Welcome to Notflix2!");
+        boolean next;
+        System.out.println("Suh duue... Welcome to Notflix2!");
         do {
             System.out.println("0 - exit\n" +
                     "1 - view all movies\n" +
                     "2 - view movies in the animated category\n" +
                     "3 - view movies in the drama category\n" +
                     "4 - view movies in the horror category\n" +
-                    "5 - view movies in the scifi category");
+                    "5 - view movies in the scifi category\n");
 
             int userAnswer = scan.getInt(0, 5);
 
             switch (userAnswer) {
                 case 0:
-                    System.out.println("Bye!");
+                    System.out.println("Cowabunga duue");
                     break;
                 case 1:
                     for (Movie movie : movies) {
@@ -59,9 +59,9 @@ public class MoviesApplication {
                 default:
                     System.err.println("That's not right at all...");
             }
-            System.out.println("Would you like to continue using Notflix2?");
-            keepGoing = scan.yesNo();
-        } while (keepGoing);
+            System.out.println("\nWould you like to continue using Notflix2?");
+            next = scan.yesNo();
+        } while (next);
     }
 }
 

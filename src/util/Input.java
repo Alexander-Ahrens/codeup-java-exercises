@@ -9,7 +9,7 @@ public class Input {
     private Scanner scanner;
 
     // Grabs input class with "this" and instantiates scanner...
-    // ...so that every new object that is created has a scanner.
+    // ...so that every new object that is created with the name of "Input" has a scanner.
     public Input() {
         this.scanner = new Scanner(System.in);
     }
@@ -40,7 +40,9 @@ public class Input {
 //        } else {
 //            return false;
 //        }
+
         // OR (different solution)
+
         System.out.println("Type y/n");
         String answer = this.scanner.nextLine();
         return (answer.equalsIgnoreCase("y") ||  // Ternary operator?

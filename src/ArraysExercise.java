@@ -3,10 +3,10 @@
 //public class ArraysExercise {
 //
 //    public static void main(String[] args) {
-//        int[] numbers = {1, 2, 3, 4, 5};
-//        System.out.println(Arrays.toString(numbers));
-//        // Why is "toString" required to make the code work?
-//        // Because reasons
+//                                                                //        int[] numbers = {1, 2, 3, 4, 5};
+//                                                                //        System.out.println(Arrays.toString(numbers));
+//                                                                        // Why is "toString" required to make the code work?
+//                                                                        // Because reasons
 //
 //
 //        Person[] people = {
@@ -15,13 +15,13 @@
 //                new Person("Chewy")
 //        };
 //
-//        addPerson(people, new Person("Cornelious"));
+////        addPerson(people, new Person("Cornelious"));
 //
 //        for (Person person : people) {
 //            System.out.println(person.sayHello(Arrays.toString(people)));
 //        }
 //
-//        public static Person[] addPerson(Person[] people, Person p){
+//        public static Person[] addPerson(Person[] people, Person x {
 //            Person[] output = new Person[people.length + 1];
 //
 //            for (i = 0; i < people.length; i++) {
