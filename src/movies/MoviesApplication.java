@@ -1,49 +1,14 @@
-//package movies;
-//import util.Input;
-//public class MovieApplication {
-//
-//    public static void main(String[] args) {
-//        for(i = 0; i <= 6; i++) {
-//            System.out.println("0 - exit");
-//            System.out.println("1 - view all movies");
-//            System.out.println("2 - view movies in the animated category");
-//            System.out.println("3 - view movies in the drama category");
-//            System.out.println("4 - view movies in the horror category");
-//            System.out.println("5 - view movies in the scifi category");
-//        }
-//    }
-//}
-//
-////    What would you like to do?
-////
-////        0 - exit
-////        1 - view all movies
-////        2 - view movies in the animated category
-////        3 - view movies in the drama category
-////        4 - view movies in the horror category
-////        5 - view movies in the scifi category
-////
-////        Enter your choice: 1
-////
-////        Frankenstein -- horror
-////        Goodfellas -- drama
-////        Pulp Fiction -- drama
-////        ...
-
-
-
 package movies;
 
 import util.Input;
 
 public class MoviesApplication {
-    static Input input = new Input();
     static Movie[] movies = MoviesArray.findAll();
 
     public static void main(String[] args) {
+        Input scan = new Input();
         boolean keepGoing;
-
-        System.err.println("Welcome to the Movie zone!");
+        System.err.println("Welcome to Notflix2!");
         do {
             System.out.println("0 - exit\n" +
                     "1 - view all movies\n" +
@@ -52,7 +17,7 @@ public class MoviesApplication {
                     "4 - view movies in the horror category\n" +
                     "5 - view movies in the scifi category");
 
-            int userAnswer = input.getInt(0, 5);
+            int userAnswer = scan.getInt(0, 5);
 
             switch (userAnswer) {
                 case 0:
@@ -94,8 +59,40 @@ public class MoviesApplication {
                 default:
                     System.err.println("That's not right at all...");
             }
-            System.out.println("Would you like to continue using the movie zone?");
-            keepGoing = input.yesNo();
+            System.out.println("Would you like to continue using Notflix2?");
+            keepGoing = scan.yesNo();
         } while (keepGoing);
     }
 }
+
+//package movies;
+//import util.Input;
+//public class MovieApplication {
+//
+//    public static void main(String[] args) {
+//        for(i = 0; i <= 6; i++) {
+//            System.out.println("0 - exit");
+//            System.out.println("1 - view all movies");
+//            System.out.println("2 - view movies in the animated category");
+//            System.out.println("3 - view movies in the drama category");
+//            System.out.println("4 - view movies in the horror category");
+//            System.out.println("5 - view movies in the scifi category");
+//        }
+//    }
+//}
+//
+////    What would you like to do?
+////
+////        0 - exit
+////        1 - view all movies
+////        2 - view movies in the animated category
+////        3 - view movies in the drama category
+////        4 - view movies in the horror category
+////        5 - view movies in the scifi category
+////
+////        Enter your choice: 1
+////
+////        Frankenstein -- horror
+////        Goodfellas -- drama
+////        Pulp Fiction -- drama
+////        ...

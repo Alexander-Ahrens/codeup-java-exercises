@@ -5,7 +5,7 @@ public class Input {
 
     //======================== THIS IS A SCANNER ========================//
 
-    // Creates scanner variable
+    // Creates scanner instance variable
     private Scanner scanner;
 
     // Grabs input class with "this" and instantiates scanner...

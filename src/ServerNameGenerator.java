@@ -1,9 +1,47 @@
-//import java.util.Random;
+import java.util.Random;
+
+public class ServerNameGenerator {
 //
-//public class ServerNameGenerator {
-//
-////    String[] adjectives = {"Ghostly", "Salty", "Rockin", "Dashing", "Sinister", "Scary", "Happy", "Missing", "Glaring", "Programming"};
-////    String[] nouns = {"Puppy", "System", "Cloud", "Panda", "Macho Man Randy Savage", "Napkin", "Program", "Garbage", "Otter", "Leftovers"};
+    public static String[] adjectives = {
+        "Ghostly",
+        "Salty",
+        "Rockin",
+        "Dashing",
+        "Sinister",
+        "Scary",
+        "Happy",
+        "Missing",
+        "Glaring",
+        "Programming"
+    };
+
+    public static String[] nouns = {
+            "Puppy",
+            "System",
+            "Cloud",
+            "Panda",
+            "Macho Man Randy Savage",
+            "Napkin",
+            "Program",
+            "Garbage",
+            "Otter",
+            "Leftovers"
+    };
+
+    public static String returnRandEle(String[] arr) {
+        int index = (int)(Math.random() * ((arr.length - 1) + 1));
+        return arr[index];
+    }
+
+    public static void main(String[] args) {
+
+//        for (int i = 0; i < 100; i++) {
+//            System.out.println(returnRandEle(nouns));
+//        }
+        String message = String.format("Your server's name is now: %s-%s", returnRandEle(adjectives),returnRandEle(nouns));
+        System.out.println(message);
+    }
+
 ////
 ////    public static String randomAdjectiveAndNoun() {
 ////        Random random = new Random();
@@ -14,6 +52,10 @@
 ////        System.out.println();
 ////    }
 //
+
+
+}
+
 //
 ////======================================== HOW TO DO IT ONLY IN THE MAIN ========================================//
 //
