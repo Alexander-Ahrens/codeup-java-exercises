@@ -15,6 +15,7 @@ public class Input {
     }
 
     // Returns whatever is input by the user.
+    // getter is ALWAYS a camelCased String!!!
     public String getString() {          // used as "input.getString" to scan.
         return this.scanner.nextLine();
     }
