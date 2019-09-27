@@ -3,9 +3,8 @@ package shapes;
 public class Rectangle {
     private int length;
     private int width;
-    private int perimeter = (2 * length) + (2 * width);
-    private int area = (length * width);
 
+    //=============== Rectangle constructor ===============//
     public Rectangle(int length, int width) {
         this.length = length;
         this.width = width;
@@ -17,7 +16,7 @@ public class Rectangle {
     }
 
     public void setLength(int length) {
-        this.length = width;
+        this.length = length;
     }
 
     //=============== Gets and sets width ===============//
@@ -31,19 +30,14 @@ public class Rectangle {
 
     //=============== Gets and sets perimeter ===============//
     public int getPerimeter() {
+        int perimeter = (2 * length) + (2 * width);
         return perimeter;
-    }
-
-    public void setPerimeter() {
-        this.perimeter = perimeter;
     }
 
     //=============== Gets and sets area ===============//
     public int getArea() {
+        int area = (length * width);
         return area;
     }
 
-    public void setArea() {
-        this.area = area;
-    }
 }
