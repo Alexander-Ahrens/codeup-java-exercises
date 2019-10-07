@@ -19,8 +19,8 @@ public class Hero {
 
     public void heroStats() {
         int heroHealth = 120;
-        int heroAttack = 30;
-        int heroDefence = 25;
+        int heroAttack = 45;
+        int heroDefence = 40;
     }
 
     public void heroLevel() {

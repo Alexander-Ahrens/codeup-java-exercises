@@ -2,9 +2,10 @@ package newAdventureGame;
 
 public class BetsyTheSpider {
 
-    public void betsyStats() {
-        int betsyHeath = 100;
-        int betsyAttack = 40;
-        int betsyDefence = 20;
+    public void monsterStats() {
+        String monsterName = "Betsy";
+        int monsterHeath = 200;
+        int monsterAttack = 50;
+        int monsterDefence = 10;
     }
 }
