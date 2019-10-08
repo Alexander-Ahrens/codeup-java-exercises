@@ -2,7 +2,7 @@ package newAdventureGame;
 
 import java.util.Scanner;
 
-public class BattleSystem {
+public class BattleSystem extends BetsyTheSpider {
 
     public static void battleSystem() {
         Scanner scan = new Scanner(System.in);
